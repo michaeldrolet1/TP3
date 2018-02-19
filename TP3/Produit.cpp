@@ -6,9 +6,8 @@
 
 #include "Produit.h"
 
-Produit::Produit(Fournisseur& fournisseur,const string& nom, int reference, double prix,TypeProduit type) 
+Produit::Produit(Fournisseur& fournisseur,const string& nom, int reference, double prix,TypeProduit type) : fournisseur_(fournisseur),nom_(nom),reference_(reference),prix_(prix),type_(type)
 {
-	// à faire
 }
 
 
@@ -34,10 +33,11 @@ double Produit::obtenirPrix() const
 
 Fournisseur& Produit::obtenirFournisseur() const
 {
-	// à faire
+	return fournisseur_;
 }
-TypeProduit Produit::retournerType() {
- // à faire
+TypeProduit Produit::retournerType()
+{
+	return type_;
 }
 
 // Methodes de modification
