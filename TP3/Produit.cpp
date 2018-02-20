@@ -9,13 +9,13 @@
 Produit::Produit(Fournisseur& fournisseur,const string& nom, int reference, double prix,TypeProduit type) 
 	: fournisseur_(fournisseur),nom_(nom),reference_(reference),prix_(prix),type_(type)
 {
-	Fournisseur& this.ajouterProduit();
+	fournisseur_.ajouterProduit(this);
 }
 
 
 Produit::~Produit()
 {
-	Fournisseur& this.enleverProduit();
+	fournisseur_.enleverProduit(this);
 }
 
 // Methodes d'acces
