@@ -8,11 +8,11 @@
 using namespace std;
 
 
-Usager::Usager(const string&  nom, const string& prenom, int identifiant, const string& codePostal):
+Usager::Usager(const string&  nom, const string& prenom, int identifiant, const string& codePostal) :
 	nom_{ nom },
 	prenom_{ prenom },
 	identifiant_{ identifiant },
-	codePostal_{ codePostal }	
+	codePostal_{ codePostal }
 {
 }
 
@@ -68,7 +68,7 @@ Usager &Usager::operator=(const Usager & usager)
 		nom_ = usager.nom_;
 		prenom_ = usager.prenom_;
 		identifiant_ = usager.identifiant_;
-		codePostal_ = usager.codePostal_;		
+		codePostal_ = usager.codePostal_;
 	}
 	return *this;
 }
@@ -88,8 +88,8 @@ ostream & operator<<(ostream & os, const Usager & usager)
 {
 	os << " Usager :";
 	os << "\t nom : " << usager.obtenirNom() << endl
-	   << "\t prenom : " << usager.obtenirPrenom() << endl
-	   << "\t codePostal: " << usager.obtenirCodePostal() << endl;
+		<< "\t prenom : " << usager.obtenirPrenom() << endl
+		<< "\t codePostal: " << usager.obtenirCodePostal() << endl;
 	return os;
 }
 

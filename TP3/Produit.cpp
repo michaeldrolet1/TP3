@@ -1,13 +1,13 @@
 /********************************************
 * Titre: Travail pratique #3 - Produit.cpp
-* Date: 
-* Auteur: 
+* Date:
+* Auteur:
 *******************************************/
 
 #include "Produit.h"
 
-Produit::Produit(Fournisseur& fournisseur,const string& nom, int reference, double prix,TypeProduit type) 
-	: fournisseur_(fournisseur),nom_(nom),reference_(reference),prix_(prix),type_(type)
+Produit::Produit(Fournisseur& fournisseur, const string& nom, int reference, double prix, TypeProduit type)
+	: fournisseur_(fournisseur), nom_(nom), reference_(reference), prix_(prix), type_(type)
 {
 	fournisseur_.ajouterProduit(this);
 }
@@ -73,8 +73,8 @@ bool Produit::operator<(const Produit & produit) const
 bool Produit::operator==(const Produit & produit) const
 {
 	return (nom_ == produit.nom_ &&
-			prix_ == produit.prix_ &&
-			reference_ == produit.reference_);
+		prix_ == produit.prix_ &&
+		reference_ == produit.reference_);
 }
 // pour lire un type enumeré
 inline istream & operator >> (istream & is, TypeProduit & typeProduit) {
@@ -89,14 +89,14 @@ istream & operator>>(istream & is, Produit & produit)
 	return is >> produit.nom_ >> produit.reference_ >> produit.prix_ >> produit.type_;
 }
 
- ostream & operator<<(ostream & os, const Produit & produit)
+ostream & operator<<(ostream & os, const Produit & produit)
 {
-	 os << "Produit :"
-		 << " nom: " << produit.obtenirNom() << endl
-		 << " \t \t ref : " << produit.obtenirReference() << endl
-		 << " \t \t prix actuel : " << produit.obtenirPrix() << endl
-		 << "\t Fournisseur " << produit.obtenirFournisseur().obtenirNom() << endl;
-	 return os;
+	os << "Produit :"
+		<< " nom: " << produit.obtenirNom() << endl
+		<< " \t \t ref : " << produit.obtenirReference() << endl
+		<< " \t \t prix actuel : " << produit.obtenirPrix() << endl
+		<< "\t Fournisseur " << produit.obtenirFournisseur().obtenirNom() << endl;
+	return os;
 }
 
 

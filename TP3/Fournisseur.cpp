@@ -1,6 +1,6 @@
 /********************************************
 * Titre: Travail pratique #3 - Fournisseur.cpp
-* Date: 
+* Date:
 * Auteur:
 *******************************************/
 #include "Fournisseur.h"

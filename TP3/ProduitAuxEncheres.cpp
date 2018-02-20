@@ -1,6 +1,6 @@
 /********************************************
 * Titre: Travail pratique #3 - ProduitAuxEncheres.cpp
-* Date: 
+* Date:
 * Auteur:
 *******************************************/
 
@@ -39,11 +39,11 @@ ostream& operator<<(ostream& os, const ProduitAuxEncheres& produit)
 	static_cast<Produit> (produit);
 	os << " \t \t Prix de base : " << produit.obtenirPrixBase() << endl
 		<< " \t \t Identifiant Client : " << produit.obtenirIdentifiantClient();
-	
+
 	return os;
 }
 
-istream & operator>>(istream & is,ProduitAuxEncheres & produit)
+istream & operator>>(istream & is, ProduitAuxEncheres & produit)
 {
 	static_cast<Produit> (produit);
 	return is;

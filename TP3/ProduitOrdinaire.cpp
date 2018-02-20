@@ -1,6 +1,6 @@
 /********************************************
 * Titre: Travail pratique #3 - ProduitOrdinaire.h
-* Date: 
+* Date:
 * Auteur:
 *******************************************/
 
@@ -11,15 +11,15 @@
 #include "Fournisseur.h"
 using namespace std;
 
-ProduitOrdinaire::ProduitOrdinaire(Fournisseur& fournisseur,const string& nom = "outil", int reference = 0,
+ProduitOrdinaire::ProduitOrdinaire(Fournisseur& fournisseur, const string& nom = "outil", int reference = 0,
 	double prix = 0.0, TypeProduit type = TypeProduitOrdinaire, bool estTaxable = true)
-	:  Produit(fournisseur,nom,prix,type), estTaxable_(estTaxable)
+	: Produit(fournisseur, nom, prix, type), estTaxable_(estTaxable)
 {
 }
 bool ProduitOrdinaire::obtenirEstTaxable() const
 {
 	return estTaxable_;
- }
+}
 
 void ProduitOrdinaire::modifierEstTaxable(bool estTaxable)
 {

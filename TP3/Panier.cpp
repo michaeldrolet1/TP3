@@ -1,7 +1,7 @@
 /********************************************
 * Titre: Travail pratique #3 - Panier.cpp
-* Date: 
-* Auteur: 
+* Date:
+* Auteur:
 *******************************************/
 
 #include "Panier.h"
@@ -40,7 +40,7 @@ double Panier::obtenirTotalApayer() const {
 
 double Panier::calculerTotalApayer()  const
 {
-	 // TODO
+	// TODO
 }
 
 
@@ -84,9 +84,9 @@ Produit* Panier::trouverProduitPlusCher()
 	return prodPlusChere;
 }
 
-ostream & operator<<(ostream & os,  const Panier & panier)
+ostream & operator<<(ostream & os, const Panier & panier)
 {
 	// TODO
 
-	
+
 }

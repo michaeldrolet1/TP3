@@ -1,7 +1,7 @@
 ﻿/**************************************************
 * Titre: Travail pratique #3 - main.cpp
-* Date: 
-* Auteur: 
+* Date:
+* Auteur:
 **************************************************/
 
 #include "Fournisseur.h"
@@ -86,18 +86,18 @@ int main()
 	cout << martine << endl;
 
 	// trouver le produit le plus cher du panier
-	cout << " Produit le plus cher "<< *martine.obtenirPanier()->trouverProduitPlusCher();
-	
+	cout << " Produit le plus cher " << *martine.obtenirPanier()->trouverProduitPlusCher();
+
 	// livrer le panier du client martine
 	martine.livrerPanier();
 
 	// Afficher lefournisseur
 	cout << poly << endl;
-	
+
 	// Nettoyer la memoire 
-	for (int i = 0; i < NB_PRODUCTS;i++) {
+	for (int i = 0; i < NB_PRODUCTS; i++) {
 		delete produits[i];
 	}
 	delete prodAuxEncheres;
-	
+
 }
