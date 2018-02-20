@@ -11,8 +11,8 @@
 #include "Fournisseur.h"
 using namespace std;
 
-ProduitOrdinaire::ProduitOrdinaire(Fournisseur& fournisseur, const string& nom = "outil", int reference = 0,
-	double prix = 0.0, TypeProduit type = TypeProduitOrdinaire, bool estTaxable = true)
+ProduitOrdinaire::ProduitOrdinaire(Fournisseur& fournisseur, const string& nom, int reference,
+	double prix , TypeProduit type , bool estTaxable)
 	: Produit(fournisseur, nom, prix, type), estTaxable_(estTaxable)
 {
 }
