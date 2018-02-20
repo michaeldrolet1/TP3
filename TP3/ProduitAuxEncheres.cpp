@@ -36,7 +36,7 @@ void ProduitAuxEncheres::modifierPrixBase(double prixBase)
 
 ostream& operator<<(ostream& os, const ProduitAuxEncheres& produit)
 {
-	static_cast<Produit> (produit);
+	os << static_cast<Produit> (produit) << endl;
 	os << " \t \t Prix de base : " << produit.obtenirPrixBase() << endl
 		<< " \t \t Identifiant Client : " << produit.obtenirIdentifiantClient();
 
