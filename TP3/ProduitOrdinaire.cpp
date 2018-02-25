@@ -39,3 +39,4 @@ istream & operator>>(istream & is, ProduitOrdinaire & produit)
 	is >> produit.estTaxable_;
 	return is;
 }
+

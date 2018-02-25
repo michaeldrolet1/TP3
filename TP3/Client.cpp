@@ -6,8 +6,14 @@
 
 #include "Client.h"
 #include "Fournisseur.h"
+#include <stdlib.h>
 
 
+Client::Client(const string&  nom, const string& prenom, int identifiant, const string& codePostal, long date) : Usager(nom, prenom, identifiant, codePostal), dateNaissance_(date)
+{
+	monPanier_ = new Panier();
+	monPanier_ = nullptr;
+}
 
 Client::~Client()
 {
@@ -57,7 +63,7 @@ void Client::acheter(ProduitOrdinaire * prod)
 		monPanier_ = new Panier(this->obtenirIdentifiant());
 	monPanier_->ajouter(prod);
 	// obtenir une note aléatoire
-
+	
 	// faire la mise à jour de la satisfaction au fournisseur
 
 }
